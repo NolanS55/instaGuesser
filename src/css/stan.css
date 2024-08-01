@@ -1,0 +1,25 @@
+.center {
+    margin: auto;
+    width: 50%;
+    height: 75%;
+    padding: 10px;
+    text-align: center;
+}
+
+.name {
+    font-size: .5vw;
+    width: 7.5%;
+    padding: 1%;
+    margin-left: 1%;
+    color:  #8ACE00;
+    background-color: black;
+}
+
+.name:hover {
+    cursor: pointer;
+    background-color:#8ACE00;
+    color: black;
+    transition: all 1s;
+}
+
+
