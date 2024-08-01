@@ -121,6 +121,8 @@ var score = 0;
 var loss = 0;
 var num1 = getRandomInt(5);
 var num2 = getRandomInt(20);
+var names = ["Aiden", "Michael", "Josh", "Nolan", "Murtaza", ""];
+var user = 5
 
 const Game = () => {
     const [video, setVideo] = useState(videos[num1][num2])
@@ -133,10 +135,12 @@ const Game = () => {
             setVideo(videos[num1][num2])
         }
         else {
+            user = num1;
             num1 = getRandomInt(5)
             num2 = getRandomInt(20)
             setVideo(videos[num1][num2])
             loss = 1;
+            
         }
     }
     function again() {
@@ -167,6 +171,7 @@ const Game = () => {
         return ( 
             <div class="center">
                 <h1 text-size="65px">YOU LOST</h1>
+                <h1>Last reel sent by : {names[user]}</h1>
                 <h1 text-align="center">{score}</h1>
                 <button class="name" onClick={again}>Play Again</button> 
             </div>
