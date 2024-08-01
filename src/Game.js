@@ -152,7 +152,7 @@ const Game = () => {
             <div class="center">
                 <h1 text-size="65px">WHO SENT THAT REEL</h1>
                 <h1 text-align="center">{score}</h1>
-                <video src={video}  controls></video>
+                <video width="45%" src={video}  controls></video>
                 <div class="selection">
                     <button class="name" onClick={() => (guess(0))}>Aiden</button>
                     <button class="name" onClick={() => (guess(1))}>Michael</button>
