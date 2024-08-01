@@ -30,6 +30,10 @@
         padding: 10px;
         text-align: center;
     }
+
+    video {
+        width: "75%";
+    }
     
     .name {
         font-size: 1vw;
